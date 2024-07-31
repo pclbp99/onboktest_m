@@ -1,0 +1,105 @@
+@font-face {
+    font-family: ag;
+    src: local("A견명조"),
+    url(font/A견명조.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.nt-sf{
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+*{
+    margin:0 auto;
+    padding:0;
+}
+
+body{
+    background: #f6f6f6;
+    width:100%;
+    font-family: "Noto Serif", serif;
+    position: relative;
+    max-width: 500px;
+}
+
+header{
+    max-width: 500px;
+    position:fixed;
+}
+
+header img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.main{
+    width:100%;
+}
+
+.main img{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+}
+
+.btn{
+    width: 80px;
+    position:fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.btn img{
+    width:100%;
+}
+
+.menu_pop{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    display: none;
+}
+
+.menu_pop .bg{
+    width: 100%;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    position:fixed;
+    z-index: 998;
+}
+
+.menu_pop .menu_on{
+    position: fixed;
+    width: 500px;
+    z-index: 999;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.menu_pop .menu_on img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 500px) {
+    .menu_pop .menu_on {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+    
+    .menu_pop .menu_on img {
+        width: 100%;
+        height: auto;
+    }
+}
