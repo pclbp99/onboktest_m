@@ -26,6 +26,10 @@ body{
     max-width: 500px;
 }
 
+.body.blur{
+    filter: blur(3px);
+}
+
 header{
     max-width: 500px;
     position:fixed;
